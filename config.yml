@@ -1,0 +1,95 @@
+baseURL: https://ik.evilurge.com/
+languageCode: nl-NL
+title: MijnJournaal
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    hideFooter: true
+    env: production
+    title: MijnJournaal
+    description: "Het is beter om op te branden dan te vervagen"
+    keywords: [Blog, Portfolio, MijnJournaal, Nederlands, Gilad Maoz]
+    author: Gilad Maoz
+    images: ["cover.png"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark
+    disableThemeToggle: true
+
+    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        disableFingerprinting: true
+        favicon: "favicon/favicon.ico"
+        favicon16x16: "favicon/favicon-16x16.png"
+        favicon32x32: "favicon/favicon-32x32.png"
+        apple_touch_icon: "favicon/apple-touch-icon.png"
+        safari_pinned_tab: "favicon/safari-pinned-tab.png"
+
+    label:
+        text: "MijnJournaal"
+        icon: /logo.png
+        iconHeight: 35
+
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Shalom allemaal 👾"
+        Content: >
+            Deze blog ontstaan toen ik de eerste Nederlandse cursus deed en nu bestaat het als een journaal van mijn reis om meer vloeiender te worden.
+
+            - Het is ook een leuke oefening voor mij - maar zelden zou deze blog recensies en aanbevelingen zijn van tools die ik in het verleden heb gebruikt
+
+            - Nou heb geduld met me, want ik zal waarschijnlijk veel fouten maken en hopelijk zal ik in de loop van de tijd verbeteren en misschien ga ik mezelf in de toekomst schamen voelen.
+
+    analytics:
+        google:
+            SiteVerificationTag: "G-8S6QEH6RHW"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+menu:
+    main:
+        - identifier: duolingo
+          name: 🦉MijnDuo
+          url: https://duome.eu/evilurge
+          weight: 20
+        - identifier: clozemaster
+          name: 🔠MijnClozemaster
+          url: https://www.clozemaster.com/players/EvilUrge
+          weight: 30
+        - identifier: Hulpmiddelen
+          name: 🛠Hulpmiddelen
+          url: hulpmiddelen
+          weight: 40
+
+pygmentsUseClasses: true
+markup:
+    highlight:
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        style: monokai
